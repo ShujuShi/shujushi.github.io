@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--
+  Personal academic homepage — single file, no build step.
+
+  To publish on GitHub Pages:
+  1. Create a repository named <your-username>.github.io
+  2. Add this file as index.html, plus photo.jpg (and cv.pdf if used)
+  3. In the repo, go to Settings > Pages and deploy from the main branch
+  Your site will be live at https://<your-username>.github.io
+
+  Everything in [square brackets] is placeholder text to replace.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="[Your Name]">
+<meta property="og:site_name" content="[Your Name]">
+<title>[Your Name]</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📄</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1f2328;
+    --muted: #5f6670;
+    --link: #1a5fb4;
+    --rule: #e3e6ea;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15181c;
+      --text: #e4e7eb;
+      --muted: #9aa3ad;
+      --link: #78aeea;
+      --rule: #2b3037;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; border-radius: 2px; }
+
+  .container { max-width: 820px; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+  /* Header: bio on the left, photo on the right */
+  .intro { display: grid; grid-template-columns: minmax(0, 1fr) 210px; gap: 2.5rem; align-items: center; }
+  .name { font-size: 2.2rem; font-weight: 600; text-align: center; margin: 0 0 1rem; }
+  .intro p { margin: 0 0 0.9rem; }
+  .photo { width: 210px; height: 210px; border-radius: 50%; object-fit: cover; background: var(--rule); display: block; }
+  .contact { text-align: center; margin: 1.25rem 0 0; }
+  .contact .sep { color: var(--muted); margin: 0 0.6rem; }
+  .address { text-align: center; color: var(--muted); font-size: 0.95rem; margin: 0.35rem 0 0; }
+
+  /* Sections */
+  h2 { font-size: 1.6rem; font-weight: 600; margin: 3rem 0 0.75rem; padding-bottom: 0.3rem; border-bottom: 1px solid var(--rule); }
+  h3 { font-size: 1.15rem; font-weight: 600; margin: 1.75rem 0 0.75rem; }
+  ul.plain { list-style: none; padding: 0; margin: 0; }
+  ul.plain li { margin: 0.25rem 0; }
+
+  .pub { margin: 0 0 1.2rem; }
+  .pub-title { font-weight: 600; }
+  .pub-title a { color: var(--link); }
+  .pub div { margin: 0.1rem 0; }
+  .me { font-weight: 700; }
+  .venue { font-style: italic; color: var(--muted); }
+  .code { font-size: 0.85rem; margin-left: 0.4rem; border: 1px solid var(--rule); border-radius: 4px; padding: 0 0.4rem; vertical-align: 1px; }
+
+  footer { margin-top: 3.5rem; color: var(--muted); font-size: 0.85rem; text-align: center; }
+
+  @media (max-width: 640px) {
+    .intro { grid-template-columns: 1fr; gap: 1.25rem; }
+    .photo { width: 150px; height: 150px; margin: 0 auto; grid-row: 1; }
+    .contact .sep { margin: 0 0.35rem; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="intro">
+      <div>
+        <h1 class="name">[Your Name]</h1>
+        <p>Welcome!</p>
+        <p>I am a [position] in the <a href="#">[Department]</a> at <a href="#">[University]</a>.</p>
+        <p>Before that, I was a [previous position] at <a href="#">[Institution]</a>. I received my Ph.D. in <a href="#">[Field]</a> from <a href="#">[University]</a> in [year], and my B.S. in <a href="#">[Field]</a> from <a href="#">[University]</a> in [year].</p>
+      </div>
+      <!-- Replace with your photo, e.g. src="photo.jpg" -->
+      <img class="photo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" alt="Profile photo of [Your Name]">
+    </div>
+    <p class="contact">
+      <a href="mailto:[you@university.edu]">Email</a><span class="sep">|</span>
+      <a href="https://scholar.google.com/citations?user=[ID]">Google Scholar</a><span class="sep">|</span>
+      <a href="https://github.com/[username]">GitHub</a><span class="sep">|</span>
+      <a href="cv.pdf">CV</a>
+    </p>
+    <p class="address">[Building and room, street address, city, postal code]</p>
+  </header>
+
+  <main>
+    <h2>Research</h2>
+
+    <h3>Research interests</h3>
+    <ul class="plain">
+      <li>[Interest one]</li>
+      <li>[Interest two]</li>
+      <li>[Interest three]</li>
+    </ul>
+
+    <h3>Preprints</h3>
+    <div class="pub">
+      <div class="pub-title"><a href="#">[Paper title]</a><a class="code" href="#">Code</a></div>
+      <div><span class="me">[Your Name]</span>, <a href="#">[Coauthor]</a>, [Coauthor]</div>
+      <div class="venue">Preprint, [year]</div>
+    </div>
+
+    <h3>Journal papers</h3>
+    <div class="pub">
+      <div class="pub-title"><a href="#">[Paper title]</a></div>
+      <div><span class="me">[Your Name]</span>, <a href="#">[Coauthor]</a></div>
+      <div class="venue">[Journal name], [year]</div>
+    </div>
+    <div class="pub">
+      <div class="pub-title"><a href="#">[Paper title]</a></div>
+      <div><a href="#">[Coauthor]</a>, <span class="me">[Your Name]</span></div>
+      <div class="venue">[Journal name], [year]</div>
+    </div>
+
+    <h3>Refereed conference papers</h3>
+    <div class="pub">
+      <div class="pub-title"><a href="#">[Paper title]</a><a class="code" href="#">Code</a></div>
+      <div><span class="me">[Your Name]</span>, [Coauthor], [Coauthor]</div>
+      <div class="venue">[Conference], [year]</div>
+    </div>
+
+    <h2>Teaching</h2>
+    <ul class="plain">
+      <li>[Course code] [Course title], [Institution], [Term year]</li>
+      <li>[Course code] [Course title], [Institution], [Term year]</li>
+    </ul>
+
+    <h2>Awards and honors</h2>
+    <ul class="plain">
+      <li><a href="#">[Organization]</a> [Award name], [year]</li>
+      <li>[Award name], [year]</li>
+    </ul>
+  </main>
+
+  <footer>Last updated [month year]</footer>
+</div>
+</body>
+</html>
