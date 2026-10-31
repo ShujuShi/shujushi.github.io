@@ -14,9 +14,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="author" content="[Your Name]">
-<meta property="og:site_name" content="[Your Name]">
-<title>[Your Name]</title>
+<meta name="author" content="Shuju Shi">
+<meta property="og:site_name" content="Shuju Shi">
+<title>Shuju Shi</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📄</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,7 +57,7 @@
 
   /* Header: bio on the left, photo on the right */
   .intro { display: grid; grid-template-columns: minmax(0, 1fr) 210px; gap: 2.5rem; align-items: center; }
-  .name { font-size: 2.2rem; font-weight: 600; text-align: center; margin: 0 0 1rem; }
+  .name { font-size: 2.2rem; font-weight: 600; text-align: left; margin: 0 0 1rem; }
   .intro p { margin: 0 0 0.9rem; }
   .photo { width: 210px; height: 210px; border-radius: 50%; object-fit: cover; background: var(--rule); display: block; }
   .contact { text-align: center; margin: 1.25rem 0 0; }
@@ -78,6 +78,10 @@
   .venue { font-style: italic; color: var(--muted); }
   .code { font-size: 0.85rem; margin-left: 0.4rem; border: 1px solid var(--rule); border-radius: 4px; padding: 0 0.4rem; vertical-align: 1px; }
 
+  .teaching li { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  .course { font-weight: 600; }
+  .term { color: var(--muted); }
+
   footer { margin-top: 3.5rem; color: var(--muted); font-size: 0.85rem; text-align: center; }
 
   @media (max-width: 640px) {
@@ -93,73 +97,87 @@
   <header>
     <div class="intro">
       <div>
-        <h1 class="name">[Your Name]</h1>
+        <h1 class="name">Shuju Shi</h1>
         <p>Welcome!</p>
-        <p>I am a [position] in the <a href="#">[Department]</a> at <a href="#">[University]</a>.</p>
-        <p>Before that, I was a [previous position] at <a href="#">[Institution]</a>. I received my Ph.D. in <a href="#">[Field]</a> from <a href="#">[University]</a> in [year], and my B.S. in <a href="#">[Field]</a> from <a href="#">[University]</a> in [year].</p>
+        <p>I am an Assistant Professor in Computational Linguistics at Indiana University Bloomington.</p>
+        <p>My research uses speech technology and acoustic phonetics to understand how people produce and perceive speech, especially atypical speech such as non-native and dysarthric speech, and to build tools that help speakers communicate better.</p>
+        <!-- Optional: add earlier positions and your B.S./M.A. here. -->
+        <p>I received my Ph.D. from the University of Illinois Urbana-Champaign in 2022 under the supervision of <a href="https://linguistics.illinois.edu/directory/profile/cls">Chilin Shih</a>, <a href="https://ece.illinois.edu/about/directory/faculty/jhasegaw">Mark Hasegawa-Johnson</a>, and <a href="https://linguistics.illinois.edu/directory/profile/rshosted">Ryan Shosted</a>.</p>
       </div>
-      <!-- Replace with your photo, e.g. src="photo.jpg" -->
-      <img class="photo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" alt="Profile photo of [Your Name]">
+      <img class="photo" src="photo.jpg" alt="Profile photo of Shuju Shi">
     </div>
     <p class="contact">
-      <a href="mailto:[you@university.edu]">Email</a><span class="sep">|</span>
-      <a href="https://scholar.google.com/citations?user=[ID]">Google Scholar</a><span class="sep">|</span>
-      <a href="https://github.com/[username]">GitHub</a><span class="sep">|</span>
-      <a href="cv.pdf">CV</a>
+      <a href="mailto:shi16@iu.edu">Email</a><span class="sep">|</span>
+      <a href="https://scholar.google.com/citations?user=SGZk95cAAAAJ&amp;hl=en">Google Scholar</a>
     </p>
-    <p class="address">[Building and room, street address, city, postal code]</p>
+    <p class="address">Ballantine Hall 504, 1020 E. Kirkwood Avenue, Bloomington, IN 47405-7005</p>
   </header>
 
   <main>
-    <h2>Research</h2>
-
-    <h3>Research interests</h3>
+    <h2>Research Interests</h2>
     <ul class="plain">
-      <li>[Interest one]</li>
-      <li>[Interest two]</li>
-      <li>[Interest three]</li>
+      <li>Speech information processing</li>
+      <li>Acoustic phonetics</li>
+      <li>Automatic pronunciation and fluency assessment</li>
+      <li>Atypical speech analysis and modeling</li>
     </ul>
 
-    <h3>Preprints</h3>
+    <h2>Recent Publications</h2>
+
+    <h3>2026</h3>
     <div class="pub">
-      <div class="pub-title"><a href="#">[Paper title]</a><a class="code" href="#">Code</a></div>
-      <div><span class="me">[Your Name]</span>, <a href="#">[Coauthor]</a>, [Coauthor]</div>
-      <div class="venue">Preprint, [year]</div>
+      <div class="pub-title">A Systematic Study of Dysarthric Speech Recognition across Etiologies and Severity Levels</div>
+      <div>Elias Naske, Ling Sun, Benjamin Glidden, <span class="me">Shuju Shi</span></div>
+      <div class="venue">IEEE SLT, 2026 (to appear)</div>
+    </div>
+    <div class="pub">
+      <div class="pub-title">Speech-LLM for Faithful Disfluency-aware L2 Transcription</div>
+      <div>Charlotte Zhu, Ling Sun, <span class="me">Shuju Shi</span></div>
+      <div class="venue">IEEE SLT, 2026 (to appear)</div>
+    </div>
+    <div class="pub">
+      <div class="pub-title">Modeling Mandarin Neutral Tone Realization: Interactions Between Tonal Context and Prosodic Boundaries</div>
+      <div>Xiao Dong, Siyi Lian, <span class="me">Shuju Shi</span></div>
+      <div class="venue">IEEE SLT, 2026 (to appear)</div>
     </div>
 
-    <h3>Journal papers</h3>
     <div class="pub">
-      <div class="pub-title"><a href="#">[Paper title]</a></div>
-      <div><span class="me">[Your Name]</span>, <a href="#">[Coauthor]</a></div>
-      <div class="venue">[Journal name], [year]</div>
-    </div>
-    <div class="pub">
-      <div class="pub-title"><a href="#">[Paper title]</a></div>
-      <div><a href="#">[Coauthor]</a>, <span class="me">[Your Name]</span></div>
-      <div class="venue">[Journal name], [year]</div>
+      <div class="pub-title">Proficiency-Aware Adaptation and Data Augmentation for Robust L2 ASR</div>
+      <div>Ling Sun, Charlotte Zhu, <span class="me">Shuju Shi</span></div>
+      <div class="venue">IEEE ICASSP, 2026</div>
     </div>
 
-    <h3>Refereed conference papers</h3>
+    <h3>2025</h3>
     <div class="pub">
-      <div class="pub-title"><a href="#">[Paper title]</a><a class="code" href="#">Code</a></div>
-      <div><span class="me">[Your Name]</span>, [Coauthor], [Coauthor]</div>
-      <div class="venue">[Conference], [year]</div>
+      <div class="pub-title">What You Read Isn’t What You Hear: Linguistic Sensitivity in Deepfake Speech Detection</div>
+      <div>Binh Nguyen, <span class="me">Shuju Shi</span>, Ryan Ofman, Thai Le</div>
+      <div class="venue">Proceedings of EMNLP, 2025</div>
+    </div>
+    <div class="pub">
+      <div class="pub-title">MedicalCare: Building and Annotating an Empathy-Rich Corpus</div>
+      <div>Yinglun Sun, Jose Zavala, <span class="me">Shuju Shi</span>, Rachel Finegold, Roxana Girju, Jeffrey Moore</div>
+      <div class="venue">Language Resources and Evaluation, 59(3), 2025</div>
+    </div>
+    <div class="pub">
+      <div class="pub-title">Neutral Tone Variation in Beijing Mandarin: Is Neutral Tone Toneless?</div>
+      <div>Xiao Dong, Fengming Liu, Chien-Jer Lin, Monica Nesbitt, <span class="me">Shuju Shi</span></div>
+      <div class="venue">Interspeech, 2025</div>
     </div>
 
     <h2>Teaching</h2>
-    <ul class="plain">
-      <li>[Course code] [Course title], [Institution], [Term year]</li>
-      <li>[Course code] [Course title], [Institution], [Term year]</li>
+    <ul class="plain teaching">
+      <li><span class="course">Applications of Speech Processing, IUB</span><span class="term">Fall 2025</span></li>
+      <li><span class="course">Fundamentals of Speech Processing, IUB</span><span class="term">Spring 2025, Spring 2026</span></li>
+      <li><span class="course">Introduction to Computational Linguistics, IUB</span><span class="term">Fall 2024–2026, Spring 2025</span></li>
     </ul>
 
     <h2>Awards and honors</h2>
-    <ul class="plain">
-      <li><a href="#">[Organization]</a> [Award name], [year]</li>
-      <li>[Award name], [year]</li>
+    <ul class="plain teaching">
+      <li><span class="course">IUB Seed Grant ($48,000)</span><span class="term">Dec. 2025</span></li>
     </ul>
   </main>
 
-  <footer>Last updated [month year]</footer>
+  <footer>Last updated October 2026</footer>
 </div>
 </body>
 </html>
